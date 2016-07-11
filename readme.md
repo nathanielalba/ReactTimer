@@ -1,1 +1,1 @@
-React Boilerplate App with Router
+React app that times things
