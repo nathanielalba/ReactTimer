@@ -26,18 +26,18 @@ var Countdown = React.createClass({
     }
   },
   componentWillUpdate: function(nextProps, nextState) {
-    console.log('component will update');
+    // console.log('component will update');
   },
   componentWillMount: function() {
     // can't do any change to refs/state/props
-    console.log('component almost mount');
+    // console.log('component almost mount');
   },
   componentDidMount: function() {
     // have access to refs/state/props
-    console.log('component did mount')
   },
+  // console.log('component did mount')
   componentWillUnmount: function() {
-    console.log('component did unmount');
+    // console.log('component did unmount');
     clearInterval(this.timer);
     this.timer = undefined;
   },
@@ -77,6 +77,7 @@ var Countdown = React.createClass({
     }
     return (
       <div>
+        <h1 className="page-title">Countdown App</h1>
         <Clock totalSeconds={count} />
         {renderControlArea()}
       </div>
